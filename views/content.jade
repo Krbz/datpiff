@@ -1,0 +1,66 @@
+block content
+	section.main.col-xs-11
+		include header
+		.content(ng-controller="mainPage")
+			.row
+				.block.col-xs-12
+					.row
+						.col-xs-12
+							h3 {{name}} 
+							//-nazwa aktualnego contentu - zmienne zalezne od controllera
+						.col-xs-12
+							ul.row
+								li
+									a
+										h4 Przegląd	
+								li
+									a
+										h4 Najnowsze
+								li
+									a
+										h4 Hity
+								li
+									a
+										h4 Odkrywaj
+				.block.col-xs-12
+					.row
+						div.col-xs
+							div.box-row
+								a.box(data-attr="{{name}}")
+									div.cover
+										img(src="#", alt="{{name}}")
+											//-ng-src, ng-aly itp
+											div.cover-hover
+												span.icon.big.play
+									div.info
+										span.title
+											| Aint digger bro
+										span.author
+											| Lil neo
+						div.col-xs
+							div.box-row
+								a.box(data-attr="{{name}}")
+									div.cover
+										img(src="#", alt="{{name}}")
+											//-ng-src, ng-aly itp
+											div.cover-hover
+												span.icon.big.play
+									div.info
+										span.title
+											| Aint digger bro
+										span.author
+											| Lil neo
+						div.col-xs
+							div.box-row
+								a.box(data-attr="{{name}}")
+									div.cover
+										img(src="#", alt="{{name}}")
+											//-ng-src, ng-aly itp
+											div.cover-hover
+												span.icon.big.play
+									div.info
+										span.title
+											| Aint digger bro
+										span.author
+											| Lil neo
+		include player	

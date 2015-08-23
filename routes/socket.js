@@ -4,9 +4,8 @@
 
 module.exports = function (socket) {
 
-	
   socket.emit('send:name', {
-    ver: socket.id
+    id: socket.id
   });
 
 };

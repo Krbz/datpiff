@@ -2,7 +2,7 @@
  * Serve JSON to our AngularJS client
  */
 
-exports.json = function (req, res) {
+exports.public = function (req, res) {
   res.json({
   	pub: {
   		app: {

@@ -1,0 +1,62 @@
+block header
+header
+	ul.row
+		li.col-xs-1
+			span.icon.small.menu
+		li.col-xs-9
+			form
+				input(type="text", placeholder="Search for something")
+		li.col-xs-2
+			.row
+				.col-xs-4
+					a.dropdown-toggle
+						span.icon.notification
+							span.badge.xsmall.int
+								| 3
+						div.dropdown
+							.header
+								p You have  
+									span.count 
+										| 3 
+									| notifications
+							.content
+								ul
+									li
+										a
+											span.icon.message
+											.block
+												span.title
+													| Sophi sent you a email
+												span.timer
+													| 1 minutes ago
+									li
+										a
+											span.icon.userlogo
+											.block
+												span.title
+													| Use awesome animate.css
+												span.timer
+													| 1 day ago
+									li.control
+										a(href="#")
+											| See all notifications
+										span.icon.small.options
+				.col-xs-8
+					a.dropdown-toggle
+						p {{name}}
+							span.icon.xsmall.userlogo
+					ul.dropdown
+						li
+							a
+								| Settings
+						li
+							a
+								| Profile
+						li
+							a
+								| Notifications
+								span.badge.xsmall.int
+									| 3 
+						li.separate.top
+							a
+								| Logout

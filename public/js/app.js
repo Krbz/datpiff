@@ -21,8 +21,8 @@ angular.module('myApp', [
     when('/view2', {
       templateUrl: 'partials/partial2',
       controller: 'MyCtrl2'
-    }).
-    otherwise({
+    })
+    .otherwise({
       redirectTo: '/view1'
     });
 
