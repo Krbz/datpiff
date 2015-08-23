@@ -4,16 +4,15 @@
 
 angular.module('myApp', [
   'ngRoute',
-
+  //app modules
   'myApp.controllers',
   'myApp.filters',
   'myApp.services',
   'myApp.directives',
-
   // 3rd party dependencies
   'btford.socket-io'
-]).
-config(function ($routeProvider, $locationProvider) {
+])
+.config(function ($routeProvider, $locationProvider) {
   $routeProvider.
     when('/view1', {
       templateUrl: 'partials/partial1',

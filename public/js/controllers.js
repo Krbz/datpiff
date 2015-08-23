@@ -5,7 +5,8 @@
 angular.module('myApp.controllers', []).
   controller('AppCtrl', function ($scope, socket) {
     socket.on('send:name', function (data) {
-      $scope.name = data.name;
+      console.log('data', data);
+      $scope.name = data.ver;
     });
   }).
   controller('MyCtrl1', function ($scope, socket) {

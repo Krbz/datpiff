@@ -2,8 +2,9 @@
  * Serve JSON to our AngularJS client
  */
 
-exports.name = function (req, res) {
+exports.users = function (req, res) {
   res.json({
-  	name: 'Bob'
+  	name: 'Bob',
+  	ver: '0.1'
   });
 };
