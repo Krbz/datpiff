@@ -37,9 +37,9 @@ var express = require('express'),
 // }
 
 // production only
-if (app.get('env') === 'production') {
-	// TODO
-};
+// if (app.get('env') === 'production') {
+// 	// TODO
+// };
 
 
 
@@ -52,7 +52,7 @@ app.get('/', routes.index);
 app.get('/partials/:name', routes.partials);
 
 // JSON API
-app.get('/api/users', api.users);
+app.get('/api', api.json);
 
 // redirect all others to the index (HTML5 history)
 app.get('*', routes.index);

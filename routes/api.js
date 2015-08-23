@@ -2,9 +2,14 @@
  * Serve JSON to our AngularJS client
  */
 
-exports.users = function (req, res) {
+exports.json = function (req, res) {
   res.json({
-  	name: 'Bob',
-  	ver: '0.1'
+  	pub: {
+  		app: {
+  			name: 'Datpiff',
+  			version: '0.0.1',
+  			author: 'Krbz'
+  		}
+  	}
   });
 };
